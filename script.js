@@ -49,10 +49,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   geraNumeroAleatorio();
 });
 
- btn1 = document.querySelector("#btn1").addEventListener("click", verifica);
- btn2 = document.querySelector("#btn2").addEventListener("click", verifica);
- btn3 = document.querySelector("#btn3").addEventListener("click", verifica);
- btn4 = document.querySelector("#btn4").addEventListener("click", verifica);
+document.querySelector("#btn1").addEventListener("click", verifica);
+document.querySelector("#btn2").addEventListener("click", verifica);
+document.querySelector("#btn3").addEventListener("click", verifica);
+document.querySelector("#btn4").addEventListener("click", verifica);
+
+document.querySelector("#reinicia").addEventListener("click", reiniciaJogo);
 
 const inputAcertos = document.querySelector("#acertos");
 const inputErros = document.querySelector("#erros");
@@ -127,4 +129,8 @@ function acertosI(){
 }
 function errosI(){
   inputErros.value = erros;
+}
+
+function reiniciaJogo(){
+  window.location.reload();
 }
