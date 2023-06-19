@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho de português</title>
+</head>
+
+<body>
+
+    <div class="container-fluid p-1 bg-primary text-white text-center">
+        <h1>Verdadeiro ou Falso</h1>
+        <p>Jogo de perguntas e respostas</p>
+    </div>
+
+    <div class="container mt-1">
+
+        <div id="painel" class="mt-3">
+            Acertos:<br><input type="text" id="acertos" value="0" readonly>
+            <br><br>
+            Erros:<br><input type="text" id="erros" value="0" readonly>
+            <input type="hidden" id="n_quest" value="0">
+        </div>
+        <div id="enunciado" class="mt-3 alert alert-primary"></div>
+        <div class="botoes" class="mt-3">
+            <button class="btn btn-success" id="btn1" data-btn="0">Letra (A)</button>
+            <button class="btn btn-danger" id="btn2" data-btn="1">Letra (B)</button>
+            <button class="btn btn-secondary" id="btn3" data-btn="2">Letra (C)</button>
+            <button class="btn btn-warning" id="btn4" data-btn="3">Letra (D)</button>
+            <button id="proximo" onclick="geraNumeroAleatorio()" class="btn btn-info" disabled>Proxima Pergunta</button>
+            <button id="reiniciar">Reiniciar jogo</button>
+        </div>
+
+        <script src="script.js"></script>
+
+    </div>
+    <br>
+</body>
+
+</html>
