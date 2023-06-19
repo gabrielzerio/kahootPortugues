@@ -132,5 +132,5 @@ function errosI(){
 }
 
 function reiniciaJogo(){
-  window.location.reload();
+  window.location.reload(false);
 }
